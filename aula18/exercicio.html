@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+        }
+
+        .box {
+            max-width: 25%;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form class="grid form" id="form" onsubmit="recebe()">
+            <div class="box">
+                <label for="name">First name:</label>
+                <input type="text" id="name" placeholder="Gerson" class="name">
+            </div>
+            <div class="box">
+                <label for="surname">Your surname:</label>
+                <input type="text" id="surname" placeholder="Arantes" class="surname">
+            </div>
+            <div class="box">
+                <label for="weight">Your weigth:</label>
+                <input type="text" id="weigth" placeholder="80" class="weigth">
+            </div>
+            <div class="box"> 
+                <label for="heigth">Your heigth:</label>
+                <input type="text" id="heigth" placeholder="1.8" class="heigth">
+            </div>
+            
+            <div class="box">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+        <div id="resultado" class="resultado"></div>   
+    </div>
+    <script src="exercicio.js"></script>
+ </body> 
+</html>
