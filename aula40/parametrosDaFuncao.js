@@ -20,12 +20,12 @@ funcao(2, 10);*/
 
 //A unica maneira de pular um valor como por exemplo b, e colocando seu valor com undefined, por exemplo console.log(2, undefined, 10)
 //################################################
-function objeto ({nome, sobrenome, idade}) {
+/*function objeto ({nome, sobrenome, idade}) {
     console.log(nome, sobrenome, idade);
 }
 
 let obj = {nome: 'Vitor', sobrenome: 'Queiroz', idade: 19};
-objeto(obj);
+objeto(obj);*/
 
 /* 
 Outra modo
@@ -38,8 +38,17 @@ objeto (['Vitor Queiroz', 'Vicente', 19]);
 //#################################################
 //... = rest operator
 function makeMath(operador, acumulador, ...numeros) {
-    for() {}
-    console.log(operador, acumulador, numeros);
+    for(let numero of numeros) {
+    if (operador === '+') acumulador += numero;
+    if (operador === '-') acumulador -= numero;
+    if (operador === '/') acumulador /= numero;
+    if (operador === '*') acumulador *= numero;
+    }
+
+    console.log(acumulador);
 }
 
-makeMath('+', 0, 20, 30, 40, 50);
+makeMath('*', 1, 20, 30, 40, 50);
+
+//Nao existe arguments em arrow function, eu terei que fazer const conta = (...args) => {console.log(args);}
+// conta('+', 1, 20, 30, 40, 50)
