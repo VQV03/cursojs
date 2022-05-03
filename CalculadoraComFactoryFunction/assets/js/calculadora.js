@@ -20,7 +20,7 @@ function criaCalculadora() {
     pressEnter() {
         this.display.addEventListener('keyup', e => {
           if (e.keyCode === 13) {
-            this.makeMath();
+            this.makeCount();
           }
         });
     },
@@ -33,7 +33,7 @@ function criaCalculadora() {
         this.display.value = this.display.value.slice(0, -1);
     },
   
-    makeMath() {
+    makeCount() {
         //Funcao perigosa, pois pode trazer falhas de seguranca
         let conta = this.display.value;
   
@@ -71,7 +71,7 @@ function criaCalculadora() {
           }
   
           if(el.classList.contains('btn-eq')) {
-            this.makeMath();
+            this.makeCount();
           }
   
           this.display.focus();
