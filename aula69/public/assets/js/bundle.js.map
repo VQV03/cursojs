@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":"AAEAA,MAAM","sources":["webpack://aula69/./src/index.js"],"sourcesContent":["const gersin = 'gerson';\r\n\r\nalert('Ola mundo!')"],"names":["alert"],"sourceRoot":""}
